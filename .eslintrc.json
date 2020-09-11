@@ -37,6 +37,9 @@
     "react/jsx-props-no-spreading": "off",
     "react/prop-types": "off",
     "no-unused-expressions": "off",
+    "max-classes-per-file": "off",
+    "class-methods-use-this": "off",
+    "no-useless-constructor": "off",
     "@typescript-eslint/explicit-function-return-type": [
       "error",
       {
