@@ -3,6 +3,14 @@
     "browser": true,
     "es2021": true
   },
+  "settings": {
+    "react": {
+      "version": "detect"
+    },
+    "import/resolver": {
+      "typescript": {}
+    }
+  },
   "extends": [
     "plugin:react/recommended",
     "airbnb",
@@ -35,6 +43,8 @@
     }],
     "import/prefer-default-export": "off",
     "react/jsx-props-no-spreading": "off",
+    "react/jsx-uses-react": "error",
+    "react/jsx-uses-vars": "error",
     "react/prop-types": "off",
     "no-unused-expressions": "off",
     "max-classes-per-file": "off",
@@ -55,10 +65,5 @@
         "tsx": "never"
       }
     ]
-  },
-  "settings": {
-    "import/resolver": {
-      "typescript": {}
-    }
   }
 }
