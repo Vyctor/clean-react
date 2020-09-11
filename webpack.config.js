@@ -1,5 +1,5 @@
-import path from 'path';
-import { CleanWebpackPlugin } from 'clean-webpack-plugin';
+const path = require('path');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 module.exports = {
   mode: 'development',
@@ -28,10 +28,16 @@ module.exports = {
           {
             loader: 'style-loader',
           },
-          { loader: 'css-loader', options: { modules: true } },
-          { loader: 'scss-loader' },
+          {
+            loader: 'css-loader',
+            options: {
+              modules: true,
+            },
+          },
+          {
+            loader: 'sass-loader',
+          },
         ],
-        exclude: /node_modules/,
       },
     ],
   },
